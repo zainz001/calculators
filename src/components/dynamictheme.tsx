@@ -4,18 +4,7 @@ type ThemeVars = Record<`--${string}`, string>;
 
 const BRAND_PRESETS: Record<string, ThemeVars> = {
   opes: {
-    "--theme-left-bg": "#F8F8F8",
-    "--theme-right-bg": "#F1EEF9",
-    "--theme-text-primary": "#23303B",
-    "--theme-text-secondary": "#64748B",
-    "--theme-highlight": "#5B3E96",
-    "--theme-border": "#E2E8F0",
-    "--theme-button": "#5B3E96",
-    "--theme-button-hover": "#4a327a",
-  },
-
-  staircase: {
-    "--theme-left-bg": "#F8FAFC",
+      "--theme-left-bg": "#F8FAFC",
     "--theme-right-bg": "#EFF6FF",
     "--theme-text-primary": "#0F172A",
     "--theme-text-secondary": "#475569",
@@ -23,6 +12,17 @@ const BRAND_PRESETS: Record<string, ThemeVars> = {
     "--theme-border": "#E2E8F0",
     "--theme-button": "#0052CC",
     "--theme-button-hover": "#0040A0",
+  },
+
+  staircase: {
+    "--theme-left-bg": "#FFFFFF", 
+    "--theme-right-bg": "#F9FAFB", /* A very light gray/off-white for contrast panels */
+    "--theme-text-primary": "#0A2540", /* The deep navy blue used for the 'Enter your details...' heading */
+    "--theme-text-secondary": "#4B5563", /* A standard readable gray for normal text */
+    "--theme-highlight": "#7AA23E", /* The distinct Staircase green */
+    "--theme-border": "#E5E7EB", /* Soft gray for input borders */
+    "--theme-button": "#7AA23E", /* The Staircase green for buttons */
+    "--theme-button-hover": "#658A32", /* A slightly darker green for when the user hovers over the button */
   },
 };
 
