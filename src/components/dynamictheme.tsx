@@ -4,7 +4,7 @@ type ThemeVars = Record<`--${string}`, string>;
 
 const BRAND_PRESETS: Record<string, ThemeVars> = {
   opes: {
-      "--theme-left-bg": "#F8FAFC",
+    "--theme-left-bg": "#F8FAFC",
     "--theme-right-bg": "#EFF6FF",
     "--theme-text-primary": "#0F172A",
     "--theme-text-secondary": "#475569",
@@ -15,14 +15,17 @@ const BRAND_PRESETS: Record<string, ThemeVars> = {
   },
 
   staircase: {
-    "--theme-left-bg": "#FFFFFF", 
-    "--theme-right-bg": "#F9FAFB", /* A very light gray/off-white for contrast panels */
-    "--theme-text-primary": "#0A2540", /* The deep navy blue used for the 'Enter your details...' heading */
-    "--theme-text-secondary": "#4B5563", /* A standard readable gray for normal text */
-    "--theme-highlight": "#7AA23E", /* The distinct Staircase green */
-    "--theme-border": "#E5E7EB", /* Soft gray for input borders */
-    "--theme-button": "#7AA23E", /* The Staircase green for buttons */
-    "--theme-button-hover": "#658A32", /* A slightly darker green for when the user hovers over the button */
+    // 👇 The fix: A subtle off-white background so the white cards actually stand out 👇
+    "--theme-left-bg": "#F4F6F8", /* A very soft, modern light gray for the main page */
+    "--theme-right-bg": "#FFFFFF", /* Pure white specifically for the results card */
+
+    // 👇 Keeping your sharp text and brand colors 👇
+    "--theme-text-primary": "#0A2540", /* Deep navy blue for headings */
+    "--theme-text-secondary": "#4B5563", /* Dark gray for standard text */
+    "--theme-highlight": "#7AA23E", /* Staircase Green */
+    "--theme-border": "#E5E7EB", /* Soft gray for borders */
+    "--theme-button": "#7AA23E",
+    "--theme-button-hover": "#658A32",
   },
 };
 
