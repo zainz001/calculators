@@ -23,7 +23,7 @@ const BRAND_PRESETS: Record<string, ThemeVars> = {
     "--theme-text-primary": "#0A2540", /* Deep navy blue for headings */
     "--theme-text-secondary": "#4B5563", /* Dark gray for standard text */
     "--theme-highlight": "#7AA23E", /* Staircase Green */
-    "--theme-border": "#E5E7EB", /* Soft gray for borders */
+    "--theme-border": "#E5E7EB", 
     "--theme-button": "#7AA23E",
     "--theme-button-hover": "#658A32",
   },

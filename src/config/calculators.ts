@@ -1,7 +1,7 @@
 import EquityAndLeverageCalculator from "../components/EquityCalculator/EquityAndLeverageCalculator";
 import CapitalGrowthCalculator from "../components/EquityCalculator/Captialgrowthcalculator";
 import PropertyInvestmentCalculator from "../components/EquityCalculator/interestcalculator";
-
+import EquityCalculatorPage from "../pages/Equity/page";
 // 1. Map paths to both their Title AND their React Component
 export const CALCULATOR_ROUTES = {
   "equity-leverage": {
@@ -15,6 +15,10 @@ export const CALCULATOR_ROUTES = {
   "property-investment": {
     title: "Property Investment Calculator",
     Component: PropertyInvestmentCalculator,
+  },
+  "equity": {                              // ← add this block
+    title: "Equity Calculator",
+    Component: EquityCalculatorPage,
   },
 } as const;
 
